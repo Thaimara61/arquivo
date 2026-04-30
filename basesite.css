@@ -1,0 +1,116 @@
+* {
+    font-family: sans-serif;
+    color: white;
+    margin: 0px;
+}
+.logo {
+    width: 250px;
+}
+div {
+    display: block;
+        unicode-bidi: isolate;
+}
+h1, h2, h3, p, button {
+    margin: 15px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 174, 0);
+    font-size: 25px;
+    text-transform: uppercase;
+}
+header{
+    background-color: rgb(30, 31, 34);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    display: inline;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    list-style-type: disc;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-image: url('img/imagens/bg.png');
+    color: #e3e0e0;
+}
+.menu ul{
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-family: sans-serif;
+
+}
+img {
+    overflow: clip;
+    width: 400px;
+}
+
+.boxProduto {
+    background-color: rgba(37, 37, 37, 0.8);
+    width: 890px;
+    margin: 30px auto; /* espaço entre os produtos */
+    border-radius: 10px;
+    display: flex;          
+    align-items: center;    
+    gap: 30px;              
+    padding: 20px;
+}
+
+p{
+    display: block;
+
+
+}
+
+.boxTexto {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.btn{
+    width: 150px;
+    background-color: rgb(255, 174, 0);
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.btn:hover {
+    background-color: rgb(255, 140, 0); /* mais escuro */
+    transform: scale(1.05); /* leve zoom */
+    cursor: pointer;
+}
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: italic;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotomono/v31/L0x7DF4xlVMF-BfR8bXMIjhOm3CWWoKC.woff2) format('woff2');
+    unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
+}
+
