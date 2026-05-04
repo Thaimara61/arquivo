@@ -3,111 +3,153 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu cardápio</title>
+
     <link rel="stylesheet" href="style.css">
 
-    <title>Meu cardapio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <img class="logo" src="imagens/logo.png" alt="Logo">
-        <nav class="menu">
-            <ul>
-                <li><a href="#burguer">Hamburgueres</a></li>
-                <li><a href="#acompanhamentos">Acompanhamentos</a></li>
-                <li><a href="#bebidas">Bebidas</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <img class="logo" src="imagens/logo.png" alt="Logo">
+    <nav class="menu">
+        <ul>
+            <li><a href="#burguer">Hamburgueres</a></li>
+            <li><a href="#acompanhamentos">Acompanhamentos</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+        </ul>
+    </nav>
+</header>
 
+<!-- CARROSSEL -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- indicadores (bolinhas) -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+    </div>
+
+    <!-- imagens -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="imagens/burger01.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/burger02.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/burger03.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/download.jpg" class="d-block w-100">
+        </div>
+    </div>
+
+    <!-- setas -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+<main>
 
     <h1 class="text-center">CARDÁPIO DIGITAL</h1>
-    <h2 id="burguer">HAMBURGUERES</h2>
 
-    <div class="boxProduto">
-        <div class="boxImg">  
-            <img src="imagens/burger01.png">   
-        </div>
-        <div class="boxTexto">
-            <h3>Clássico Angus Burger - R$22,50</h3>
-            <p>
-                Delicie-se com o nosso Hambúrguer Clássico, feito com um suculento hambúrguer de carne angus, queijo derretido, alface crocante, tomate fresco e um toque especial do nosso molho secreto. Perfeito para saciar sua fome!
-            </p>
-            <button class="btn">Pedir</button>
-        </div>
-    </div>
+    <!-- HAMBURGUERES -->
+    <section id="burguer">
+        <h2>HAMBURGUERES</h2>
 
-    <div class="boxProduto">
-        <div class="boxImg">  
-            <img src="imagens/burger02.png">   
+        <div class="boxProduto">
+            <div class="boxImg">
+                <img src="imagens/burger01.png">
+            </div>
+            <div class="boxTexto">
+                <h3>Clássico Angus Burger - R$22,50</h3>
+                <p>Descrição do hambúrguer...</p>
+                <button class="btn">Pedir</button>
+            </div>
         </div>
-        <div class="boxTexto">
-            <h3>Gourmet Burger - R$35,00</h3>
-            <p>
-                O nosso Hambúrguer Gourmet, preparado com um suculento hambúrguer de carne nobre, queijo derretido, cebola caramelizada e baccon. Uma escolha irresistível!
-            </p>
-            <button class="btn">Pedir</button>
-        </div>
-    </div>
 
-    <div class="boxProduto">
-        <div class="boxImg">  
-            <img src="imagens/burger03.png">   
+        <div class="boxProduto">
+            <div class="boxImg">
+                <img src="imagens/burger02.png">
+            </div>
+            <div class="boxTexto">
+                <h3>Gourmet Burger - R$35,00</h3>
+                <p>Descrição do hambúrguer...</p>
+                <button class="btn">Pedir</button>
+            </div>
         </div>
-        <div class="boxTexto">
-            <h3>Defumado BBQ Burger - R$29,00</h3>
-            <p>
-                Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de hambúrguer de carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.
-            </p>
-            <button class="btn">Pedir</button>
-        </div>
-    </div>
- 
-    <h2 id="acompanhamentos">ACOMPANHAMENTOS  </h2>
-    <div class="boxProduto">
-        <div class="boxImg">  
-            <img src="imagens/acomp01.png">   
-        </div>
-        <div class="boxTexto">
-            <h3> Fritas - R$15,00</h3>
-            <p>
-                Nossas batatas fritas são o acompanhamento perfeito para qualquer refeição! Cortadas em palitos e fritas até ficarem douradas e crocantes por fora, e macias por dentro, elas são irresistíveis em cada mordida. 
-            </p>
-            <button class="btn">Pedir</button>
-        </div>
-    </div>
 
-    <h2 id="bebidas">BEBIDAS</h2>
-    <div class="boxProduto">
-        <div class="boxImg boxBebida">  
-            <img src="imagens/bebida01.png">   
+        <div class="boxProduto">
+            <div class="boxImg">
+                <img src="imagens/burger03.png">
+            </div>
+            <div class="boxTexto">
+                <h3>BBQ Burger - R$29,00</h3>
+                <p>Descrição do hambúrguer...</p>
+                <button class="btn">Pedir</button>
+            </div>
         </div>
-        <div class="boxTexto boxBebida">
-            <h3>Coca-Cola - R$5,00</h3>
-            <p>
-                Refresque-se com a clássica Coca-Cola gelada, uma bebida que encanta paladares há décadas. Com seu sabor único e inconfundível para acompanhar seu hambúrguer ou batatas fritas.
-            </p>
-            <button class="btn">Pedir</button>
-        </div>
-    </div>
+    </section>
 
-    <div class="boxProduto">
-        <div class="boxImg">  
-            <img src="imagens/bebida02.png">   
+    <!-- ACOMPANHAMENTOS -->
+    <section id="acompanhamentos">
+        <h2>ACOMPANHAMENTOS</h2>
+
+        <div class="boxProduto">
+            <div class="boxImg">
+                <img src="imagens/acomp01.png">
+            </div>
+            <div class="boxTexto">
+                <h3>Fritas - R$15,00</h3>
+                <p>Descrição das fritas...</p>
+                <button class="btn">Pedir</button>
+            </div>
         </div>
-        <div class="boxTexto">
-            <h3>Sprite - R$5,00</h3>
-            <p>
-                Revitalize seus sentidos com a refrescante Sprite, uma bebida cítrica e efervescente que desperta os sentidos e eleva o seu ânimo para acompanhar seu hambúrguer ou batatas fritas. 
-            </p>
-            <button class="btn">Pedir</button>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section id="bebidas">
+        <h2>BEBIDAS</h2>
+
+        <div class="boxProduto">
+            <div class="boxImg">
+                <img src="imagens/bebida01.png">
+            </div>
+            <div class="boxTexto">
+                <h3>Coca-Cola - R$5,00</h3>
+                <p>Descrição...</p>
+                <button class="btn">Pedir</button>
+            </div>
         </div>
-    </div>
-    <br>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <div class="boxProduto">
+            <div class="boxImg">
+                <img src="imagens/bebida02.png">
+            </div>
+            <div class="boxTexto">
+                <h3>Sprite - R$5,00</h3>
+                <p>Descrição...</p>
+                <button class="btn">Pedir</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
